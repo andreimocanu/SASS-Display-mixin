@@ -1,0 +1,20 @@
+///
+/// SASS Display mixin
+///
+/// @author andreimocanu
+///
+/// @param {String} $type
+/// @param {String} $alignment
+///
+/// @example
+///   .selector {
+///     @include display(inline-block, top);
+///   }
+///
+
+@mixin display($type, $alignment: null) {
+    display: $type;
+    @if ($alignment) {
+        vertical-align: $alignment;
+    }
+}
